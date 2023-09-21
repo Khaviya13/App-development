@@ -1,0 +1,138 @@
+/* register.css */
+
+/* Global styles */
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+/* Form wrapper and container styles */
+.form_wrapper {
+    background: #fff;
+    width: 1px; /* Adjusted width */
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 8% auto 0;
+    position: relative;
+    z-index: 1;
+    border-top: 5px solid #f5ba1a;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.form_wrapper.active {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+}
+
+/* Title styles */
+.title_container {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.title_container h2 {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin: 0;
+}
+
+/* Input field styles */
+.input_field {
+    position: relative;
+    margin-bottom: 10px;
+    animation: bounce 0.6s ease-out;
+}
+
+.input_field input,
+.textarea_field textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px; /* Adjusted border-radius */
+}
+
+.input_field span {
+    position: absolute;
+    top: 8px; /* Adjusted top */
+    left: 8px; /* Adjusted left */
+}
+
+.textarea_field textarea {
+    height: 60px; /* Adjusted height */
+}
+
+/* Checkbox and radio button styles */
+.checkbox_option label,
+.radio_option label {
+    margin-left: 5px;
+}
+
+/* Select box styles */
+.select_option select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.select_arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* Button styles */
+.button {
+    background: #f5ba1a;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 5px;
+    transition: all 0.30s ease-in-out;
+}
+
+.button:hover {
+    background: darken(#f5ba1a, 7%);
+}
+
+.button:focus {
+    background: darken(#f5ba1a, 7%);
+}
+
+/* Credit text styles */
+.credit {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 10px;
+    color: #f5ba1a;
+}
+
+.credit a {
+    color: darken(#f5ba1a, 7%);
+}
+
+/* Animation keyframes */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
