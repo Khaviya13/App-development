@@ -1,0 +1,68 @@
+body{
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210915/pngtree-prison-crime-modern-background-image_898442.jpg");
+  
+  background-size: cover;
+}.registration-form {
+    width: 300px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #d30b0b;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f2efef;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    
+  
+    
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button.register-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button.register-button:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    margin-top: 15px;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
